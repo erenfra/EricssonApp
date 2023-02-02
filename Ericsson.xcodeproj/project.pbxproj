@@ -65,11 +65,11 @@
 		2487F254298230CE001090DB /* Ericsson */ = {
 			isa = PBXGroup;
 			children = (
+				2487F255298230CE001090DB /* EricssonApp.swift */,
+				2487F267298242FC001090DB /* RadioManager.swift */,
 				2487F2C7298B70DE001090DB /* Views */,
 				2487F2C4298B6AF9001090DB /* Components */,
 				2487F2BC298B4B75001090DB /* Model */,
-				2487F255298230CE001090DB /* EricssonApp.swift */,
-				2487F267298242FC001090DB /* RadioManager.swift */,
 				2487F259298230D5001090DB /* Assets.xcassets */,
 				2487F25B298230D5001090DB /* Preview Content */,
 			);
