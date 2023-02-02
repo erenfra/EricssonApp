@@ -1,0 +1,26 @@
+[
+    {
+      "id": "AIR 1279",
+      "band": "B260",
+      "dualBand": false,
+      "mimo": "1 PAM",
+      "group": "7b"
+ 
+    },
+    {
+      "id": "AIR 1281",
+      "band": "B260",
+      "dualBand": false,
+      "mimo": "1 PAM",
+      "group": "7b"
+  
+    },
+    {
+      "id": "AIR 3283",
+      "band": ["B2/B25", "B66"],
+      "dualBand": true,
+      "mimo": "32T32R",
+      "group": "6"
+
+    }
+]
