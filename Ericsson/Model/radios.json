@@ -47,7 +47,8 @@
       "width": 508,
       "depth": 300,
       "inputPower": "DC",
-      "rfConnectorType": "NA"
+      "rfConnectorType": "NA",
+      "picture": "AIR3283"
     },
     {
       "id": "AIR 4435",
@@ -151,7 +152,8 @@
       "depth": 256,
       "inputPower": "DC",
       "maxFuse": 50,
-      "rfConnectorType": "NA"
+      "rfConnectorType": "NA",
+      "picture": "AIR6488"
     },
     {
       "id": "AIR 6464",
@@ -183,7 +185,8 @@
       "width": 342,
       "depth": 124,
       "inputPower": "DC",
-      "rfConnectorType": "4.3-10"
+      "rfConnectorType": "4.3-10",
+      "picture": "RADIO2012"
     },
     {
       "id": "Radio 2203",
@@ -271,7 +274,8 @@
       "inputPower": "DC",
       "minFuse": 20,
       "maxFuse": 32,
-      "rfConnectorType": "4.3-10"
+      "rfConnectorType": "4.3-10",
+      "picture": "RADIO4415"
     },
     {
       "id": "Radio 4415-B30",
@@ -288,7 +292,8 @@
       "inputPower": "DC",
       "minFuse": 20,
       "maxFuse": 32,
-      "rfConnectorType": "4.3-10"
+      "rfConnectorType": "4.3-10",
+      "picture": "RADIO4415"
     },
     {
       "id": "Radio 4426",
@@ -305,7 +310,8 @@
       "inputPower": "DC",
       "minFuse": 25,
       "maxFuse": 32,
-      "rfConnectorType": "4.3-10"
+      "rfConnectorType": "4.3-10",
+      "picture": "RADIO4426"
     },
     {
       "id": "Radio 4435",
@@ -321,7 +327,8 @@
       "depth": 93,
       "inputPower": "AC / DC",
       "maxFuse": 16,
-      "rfConnectorType": "NEX10"
+      "rfConnectorType": "NEX10",
+      "picture": "RADIO4435"
     },
     {
       "id": "Radio 4449",
@@ -338,7 +345,8 @@
       "inputPower": "DC",
       "minFuse": 20,
       "maxFuse": 32,
-      "rfConnectorType": "4.3-10 Plus"
+      "rfConnectorType": "4.3-10 Plus",
+      "picture": "RADIO4449"
     },
     {
       "id": "Radio 4460",
@@ -373,7 +381,8 @@
       "inputPower": "DC",
       "minFuse": 20,
       "maxFuse": 32,
-      "rfConnectorType": "4.3-10"
+      "rfConnectorType": "4.3-10",
+      "picture": "RADIO4478"
     },
     {
       "id": "Radio 4490",
@@ -388,7 +397,8 @@
       "height": 444,
       "width": 384,
       "depth": 172,
-      "inputPower": "DC"
+      "inputPower": "DC",
+      "picture": "RADIO4490"
     },
     {
       "id": "Radio 4890",
@@ -403,7 +413,8 @@
       "height": 444,
       "width": 384,
       "depth": 176,
-      "inputPower": "DC"
+      "inputPower": "DC",
+      "picture": "RADIO4890"
     },
     {
       "id": "Radio 8843",
@@ -420,7 +431,8 @@
       "inputPower": "DC",
       "minFuse": 26,
       "maxFuse": 32,
-      "rfConnectorType": "4.3-10 Plus"
+      "rfConnectorType": "4.3-10 Plus",
+      "picture": "RADIO8843"
     },
     {
       "id": "Radio 8863",

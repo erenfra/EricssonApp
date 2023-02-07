@@ -28,6 +28,10 @@ struct DetailView: View {
     let maxFuse: Int?
     let rfConnectorType: String?
     let picture: String?
+    let widthInch: Double
+    let heightInch: Double
+    let depthInch: Double
+    let weightPounds: Double
     @State private var isMetric: Bool = false
     
     var body: some View {
@@ -38,7 +42,7 @@ struct DetailView: View {
                         Image(picture ?? "N/A")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 70)
+                            .frame(width: 200)
 //                        Text(id)
 //                            .font(.title)
                         
@@ -88,25 +92,25 @@ struct DetailView: View {
                             HStack(alignment: .center) {
                                 Text("Width [\(isMetric ? "mm" : "inch")]")
                                 Spacer()
-                                ValueCard(value: "\(isMetric ? width : width * 0.0394)", color: .cyan.opacity(0.5))
+                                ValueCard(value: "\(isMetric ? width : widthInch)", color: .cyan.opacity(0.5))
                                                    
                             }
                             HStack(alignment: .center) {
                                 Text("Height [\(isMetric ? "mm" : "inch")]")
                                 Spacer()
-                                ValueCard(value: "\(isMetric ? height : height * 0.0394)", color: .blue.opacity(0.5))
+                                ValueCard(value: "\(isMetric ? height : heightInch)", color: .blue.opacity(0.5))
                                                    
                             }
                             HStack(alignment: .center) {
                                 Text("Depth [\(isMetric ? "mm" : "inch")]")
                                 Spacer()
-                                ValueCard(value: "\(isMetric ? depth : depth * 0.0394)", color: .indigo.opacity(0.50))
+                                ValueCard(value: "\(isMetric ? depth : depthInch)", color: .indigo.opacity(0.50))
                                                    
                             }
                             HStack(alignment: .center) {
                                 Text("Weight [\(isMetric ? "kg" : "pounds")]")
                                 Spacer()
-                                ValueCard(value: "\(isMetric ? weight : weight * 2.20)", color: .orange)
+                                ValueCard(value: "\(isMetric ? weight : weightPounds)", color: .orange)
                                                    
                             }
                             
@@ -139,7 +143,7 @@ struct DetailView: View {
                                 ValueCard(value: "\(minFuse ?? 0)", color: .green.opacity(0.5))
                             }
                             HStack (alignment: .center){
-                                Text("Maximun Allowed Fuse [A]")
+                                Text("Maximum Fuse [A]")
                                 Spacer()
                                 ValueCard(value: "\(maxFuse ?? 0)", color: .yellow.opacity(0.5))
                             }
@@ -163,6 +167,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(id: "Radio 2203", band: "B5 - B14 - B2/B25", dualBand: true, mimo: "2T2R", group: "5b", cpri: 9.8, eCpri: nil, power: 5, eirp: nil, antennaGain: nil, weight: 4.5, width: 200, height: 200, depth: 100, inputPower: "AC / DC", minFuse: 4, maxFuse: 16, rfConnectorType: "4.3-10", picture: "AIR6464")
+        DetailView(id: "Radio 2203", band: "B5 - B14 - B2/B25", dualBand: true, mimo: "2T2R", group: "5b", cpri: 9.8, eCpri: nil, power: 5, eirp: nil, antennaGain: nil, weight: 4.5, width: 200, height: 200, depth: 100, inputPower: "AC / DC", minFuse: 4, maxFuse: 16, rfConnectorType: "4.3-10", picture: "AIR6464", widthInch: 100.0, heightInch: 100.0, depthInch: 100.0, weightPounds: 25.5)
     }
 }

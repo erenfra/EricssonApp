@@ -30,15 +30,19 @@ struct RadioType: Codable, Identifiable {
     let picture: String?
     
     var widthInch: Double {
-        return width * 0.0393701
+        return round((width * 0.0393701)*100)/100.0
     }
     
     var heightInch: Double {
-        return height * 0.0393701
+        return round((height * 0.0393701)*100)/100.0
     }
     
     var depthInch: Double {
-        return depth * 0.0393701
+        return round((depth * 0.0393701)*100)/100.0
+    }
+    
+    var weightPounds: Double {
+        return round((weight * 2.20462)*100)/100.0
     }
     
 }

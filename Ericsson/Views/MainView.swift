@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @ObservedObject var radioManager = RadioManager()
-    let columns = [GridItem(.adaptive(minimum: 200))]
+    let columns = [GridItem(.adaptive(minimum: 250))]
     
     var body: some View {
         NavigationStack {
@@ -18,7 +18,7 @@ struct MainView: View {
                 LazyVGrid(columns: columns) {
                     ForEach (radioManager.radios) { radio in
                         NavigationLink {
-                            DetailView(id: radio.id, band: radio.band, dualBand: radio.dualBand , mimo: radio.mimo, group: radio.group, cpri: radio.cpri, eCpri: radio.eCpri, power: radio.power, eirp: radio.eirp, antennaGain: radio.antennaGain, weight: radio.weight, width: radio.width, height: radio.height, depth: radio.depth, inputPower: radio.inputPower, minFuse: radio.minFuse, maxFuse: radio.maxFuse, rfConnectorType: radio.rfConnectorType, picture: radio.picture)
+                            DetailView(id: radio.id, band: radio.band, dualBand: radio.dualBand , mimo: radio.mimo, group: radio.group, cpri: radio.cpri, eCpri: radio.eCpri, power: radio.power, eirp: radio.eirp, antennaGain: radio.antennaGain, weight: radio.weight, width: radio.width, height: radio.height, depth: radio.depth, inputPower: radio.inputPower, minFuse: radio.minFuse, maxFuse: radio.maxFuse, rfConnectorType: radio.rfConnectorType, picture: radio.picture, widthInch: radio.widthInch, heightInch: radio.heightInch, depthInch: radio.depthInch, weightPounds: radio.weightPounds)
                         } label: {
                             Card(title: radio.id, picture: radio.picture ?? "camera")
                                 .padding()
